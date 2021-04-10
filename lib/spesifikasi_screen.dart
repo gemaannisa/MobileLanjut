@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
+class Spec extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(

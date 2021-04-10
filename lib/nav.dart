@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:widgets_flutter/home_screen.dart';
-import 'package:widgets_flutter/profile_screen.dart';
+import 'package:widgets_flutter/spesifikasi_screen.dart';
+import 'package:widgets_flutter/galeri_screen.dart';
 
 class Nav extends StatefulWidget {
   @override
@@ -9,7 +9,7 @@ class Nav extends StatefulWidget {
 
 class _NavState extends State<Nav> {
   int _selectedIndex = 0;
-  List<Widget> _widgetOptions = <Widget>[Home(), Profile()];
+  List<Widget> _widgetOptions = <Widget>[Spec(), Galeri()];
 
   void _onItemTap(int index) {
     setState(() {
