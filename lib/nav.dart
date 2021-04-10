@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:widgets_flutter/home_screen.dart';
+import 'package:widgets_flutter/home_screen.dart';
 
 class Nav extends StatefulWidget {
   @override
@@ -9,8 +9,8 @@ class Nav extends StatefulWidget {
 class _NavState extends State<Nav> {
   int _selectedIndex = 0;
   List<Widget> _widgetOptions = <Widget>[
-    Text('Home'),
-    Text('Messages'),
+    Home(),
+    Text('Profile'),
   ];
 
   void _onItemTap(int index) {
