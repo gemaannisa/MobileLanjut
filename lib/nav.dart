@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widgets_flutter/home_screen.dart';
+import 'package:widgets_flutter/profile_screen.dart';
 
 class Nav extends StatefulWidget {
   @override
@@ -8,10 +9,7 @@ class Nav extends StatefulWidget {
 
 class _NavState extends State<Nav> {
   int _selectedIndex = 0;
-  List<Widget> _widgetOptions = <Widget>[
-    Home(),
-    Text('Profile'),
-  ];
+  List<Widget> _widgetOptions = <Widget>[Home(), Profile()];
 
   void _onItemTap(int index) {
     setState(() {
@@ -23,7 +21,7 @@ class _NavState extends State<Nav> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Flutter Widgets Demo"),
+        title: Text("Acer Predator 21x"),
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
@@ -31,12 +29,12 @@ class _NavState extends State<Nav> {
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
+            icon: Icon(Icons.info),
+            label: 'Spesifikasi',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.account_circle),
-            label: 'Profile',
+            icon: Icon(Icons.image),
+            label: 'Galeri',
           ),
         ],
         currentIndex: _selectedIndex,
