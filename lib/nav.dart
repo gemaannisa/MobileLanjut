@@ -9,7 +9,7 @@ class Nav extends StatefulWidget {
 class _NavState extends State<Nav> {
   int _selectedIndex = 0;
   List<Widget> _widgetOptions = <Widget>[
-    Home(),
+    Text('Home'),
     Text('Messages'),
   ];
 
@@ -35,8 +35,8 @@ class _NavState extends State<Nav> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.message),
-            label: 'Messages',
+            icon: Icon(Icons.account_circle),
+            label: 'Profile',
           ),
         ],
         currentIndex: _selectedIndex,
